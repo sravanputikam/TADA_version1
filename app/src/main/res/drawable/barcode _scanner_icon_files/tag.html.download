@@ -1,0 +1,21 @@
+
+<!-- saved from url=(0177)https://s.thebrighttag.com/tag?site=h9JOopZ&mode=iframe&e_sha1=75218a86bf06af915ba5ebddff94793d9d1586e7&e_sha256=3ae9de985b9b6c7b01b4e2d1408397cb340a3af09077e7e13aa10ef5ca302eeb -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script type="text/javascript" src="./tag.download"></script><script id="id_ad_rns_lqwls" src="https://d2xvc2nqkduarq.cloudfront.net/zr/js/adrns_c.js#HitachiXHTS547550A9E384_J2100050F31L4AF31L4AX"></script></head><body><script src="./tag.js.download">{ site: 'h9JOopZ',
+  referrer: 'https://pippio.com/api/sync?pid\x3d1391\x26ref\x3dhttps%3A%2F%2Ficons8.com%2Fweb-app%2F2162%2Fbarcode-scanner\x26it\x3d1\x26iv\x3dc4lhkjf12bobih0',
+  loadOnly: true }
+</script><script type="text/javascript">
+BrightTag.site('h9JOopZ',function(s){
+s.dbe('hashed email sha1', 'bt_parameter(\x27e_sha1\x27).toLowerCase()',{pageId:1506693});
+s.dbe('source', '\x22WEB\x22',{pageId:1506693});
+s.dbe('hashed email sha256', 'bt_parameter(\x27e_sha256\x27).toLowerCase()\r\n',{pageId:1506693});
+s.dbe('timestamp', '\x272017-10-23T02:11:32.632Z\x27');
+s.dbe('hashed email md5', 'bt_parameter(\x27e_md5\x27).toLowerCase()',{pageId:1506693});
+s.domready(function(){
+s.tag('\x3cscript type\x3d\x22text/javascript\x22\x3e\n    // Vendor List\n    var vendor_obj \x3d [\n       [\x27gcms\x27,\x27X7aCaxG\x27,\x27tBLcuKl\x27,\x27an\x27], //Google,TapAd,The Trade Desk,AppNexus\n       [\x27TtHAwbb\x27,\x27mm\x27,\x27gcms\x27,\x27rWc5RFi\x27] // MediaMath,Neustar,Google,Turn\n    ];\n\n    // Number of vendor groups to rotate through\n    var groups \x3d vendor_obj.length;\n\n    // Maximum syncs\n    var max_syncs \x3d 4;\n\n    // Adhere to cookie sync limit if it exists for the client\n    var client_limit \x3d \x22'+s.data('synclimit')+'\x22 || max_syncs;\n\n    // Determine existing view count to use for selecting vendor syncs to execute\n    var cnt \x3d bt_cookie(\x27s.rttrcnt\x27);\n    if (!cnt) { cnt \x3d 0; }\n    cnt \x3d cnt*1 + 1;\n\n    // Build and append image to make /csx call\n    var vendor_grp \x3d vendor_obj[cnt%groups];\n    BrightTag.Util.each(vendor_grp, function (vendor_id, index) {\n        if (index \x3c client_limit) {\n            new Image().src \x3d \x27//s.thebrighttag.com/csx?tp\x3d\x27 + vendor_id;\n        }\n    });\n\x3c/script\x3e',{tagId:3668069});
+s.tag('\x3cscript type\x3d\x22text/javascript\x22\x3e\n    var cnt \x3d bt_cookie(\x27s.rttrcnt\x27);\n    if (cnt \x3d\x3d \x22\x22) cnt \x3d 0;\n    cnt \x3d cnt*1 + 1;\n    var now \x3d new Date();\n    var time \x3d now.getTime();\n    var expireTime \x3d time + 365 * 24 * 60 * 60 * 1000;\n    now.setTime(expireTime);\n    document.cookie\x3d\x22s.rttrcnt\x3d\x22+cnt+\x22;path\x3d/;expires\x3d\x22+now.toGMTString()+\x22;\x22;\n\x3c/script\x3e',{tagId:3668076});
+s.secondary(function(c){
+c.appendData('hashed email sha1').appendData('source').appendData('hashed email sha256').appendData('timestamp').appendData('hashed email md5');
+});
+});
+});
+</script></body></html>

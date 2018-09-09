@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/ingredients"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Inlcude Ingredients"
+                android:inputType="text" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@android:color/white"
+                app:fabSize="mini"
+                app:rippleColor="@android:color/background_light"
+                app:srcCompat="@drawable/grocery_bag_1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="(Ex: chicken,butter,flour,....etc)" />
+
+        <AutoCompleteTextView
+            android:id="@+id/intolerances"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Intolerances"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="(Ex: chicken,butter,flour,....etc)" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Calories"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Min"
+                android:layout_marginLeft="10dp" />
+            <SeekBar
+                android:id="@+id/seekMinCalories"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                />
+
+            <TextView
+                android:id="@+id/minCal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/seekMinCalories"
+                android:layout_toRightOf="@+id/seekMinCalories"
+                android:textSize="20sp"
+                tools:text="0"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Max"
+                />
+            <SeekBar
+                android:id="@+id/seekMaxCalories"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                />
+
+            <TextView
+                android:id="@+id/maxCal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                tools:text="0"
+                android:layout_toRightOf="@+id/seekMaxCalories"
+                android:layout_toEndOf="@+id/seekMaxCalories"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Carbohydrate (grams)"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Min"
+                />
+            <SeekBar
+                android:id="@+id/seekMinCarbs"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                />
+
+            <TextView
+                android:id="@+id/minCarbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/seekMinCarbs"
+                android:textSize="20sp"
+                tools:text="0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Max"
+                />
+            <SeekBar
+                android:id="@+id/seekMaxCarbs"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                />
+
+            <TextView
+                android:id="@+id/maxCarbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/seekMaxCarbs"
+                android:textSize="20sp"
+                tools:text="0" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Protein (grams)"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Min"
+                />
+            <SeekBar
+                android:id="@+id/seekMinProteins"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                />
+
+            <TextView
+                android:id="@+id/minProtein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/seekMinProteins"
+                android:textSize="20sp"
+                tools:text="0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Max"
+                />
+            <SeekBar
+                android:id="@+id/seekMaxProteins"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"/>
+
+            <TextView
+                android:id="@+id/maxProtein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/seekMaxProteins"
+                android:textSize="20sp"
+                tools:text="0" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Fat (grams)"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Min"
+                />
+            <SeekBar
+                android:id="@+id/seekMinFats"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                />
+
+            <TextView
+                android:id="@+id/minFat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/seekMinFats"
+                android:textSize="20sp"
+                tools:text="0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Max"
+                />
+            <SeekBar
+                android:id="@+id/seekMaxFats"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                />
+
+            <TextView
+                android:id="@+id/maxFat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/seekMaxFats"
+                android:textSize="20sp"
+                tools:text="0" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Search" />
+    </LinearLayout>
+</ScrollView>

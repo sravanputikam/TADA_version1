@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.flash"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <user-permission android:name="android.permission.FLASHLIGHT"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.version.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity android:name=".Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activities.IngredientSearch" />
+        <activity
+            android:name=".Activities.FoodSearch" />
+        <activity
+            android:name=".Activities.MethodSearch" />
+        <activity
+            android:name=".Activities.SavedRecipes" />
+        <activity
+            android:name=".groceries.GrocerySearch" />
+        <activity
+            android:name=".groceries.GroceryActivity" />
+        <activity
+            android:name=".groceries.GroceriesSelect" />
+        <activity
+            android:name=".groceries.CameraBarcode" />
+        <activity
+            android:name=".Activities.HeartRateMonitor" />
+        <provider
+        android:authorities="com.example.android.data.RecipeProvider"
+        android:name=".data.RecipeProvider"
+        android:exported="false"
+        />
+        <provider
+            android:authorities="com.example.android.data.GroceryProvider"
+            android:name=".data.GroceryProvider"
+            android:exported="false"
+            />
+
+    </application>
+
+</manifest>
